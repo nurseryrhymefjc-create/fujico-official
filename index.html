@@ -84,6 +84,26 @@ footer{background:#f8e0de;text-align:center;color:var(--muted);font-size:11px;pa
 .sns-heading-rule{width:72px;height:2px;background:linear-gradient(90deg,transparent,#d98f9d 30%,#d98f9d 70%,transparent)}
 .sns-heading-description{font-size:14px;line-height:2;color:var(--muted);margin-bottom:0}
 @media(max-width:740px){.sns-heading-description{font-size:13px}.sns-heading-title{gap:19px}}
+
+/* Social channel cards */
+.social{padding:23px 18px 19px}
+.channel-heading{display:flex;flex-direction:column;align-items:center;padding:2px 0 0}
+.channel-brand{display:grid;place-items:center;color:var(--rose);width:42px;height:42px;margin-bottom:7px}
+.channel-brand svg{width:30px;height:30px;display:block}
+.channel-heading h3{font-family:Georgia,"Times New Roman",serif;font-size:28px;font-weight:400;letter-spacing:-.025em;line-height:1.2;margin:0 0 7px}
+.channel-handle{font-size:10px;color:var(--muted);letter-spacing:.1em}
+.channel-audience{display:flex;align-items:baseline;justify-content:center;flex-wrap:wrap;gap:8px;margin:16px 0 22px;padding-top:16px;position:relative}
+.channel-audience::before{content:"";position:absolute;top:0;left:calc(50% - 18px);width:36px;height:1px;background:var(--line)}
+.audience-number{font-family:Georgia,"Times New Roman",serif;font-size:30px;line-height:1;color:var(--ink);font-variant-numeric:tabular-nums;letter-spacing:-.035em}
+.audience-label{font-size:10px;color:var(--muted);font-weight:400;letter-spacing:.06em}
+.channel-story{padding:18px 1px 0}
+.channel-story .social-desc{min-height:0;font-size:14px;line-height:1.9;margin-bottom:15px}
+.channel-post-info{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:7px;padding-top:12px;border-top:1px solid #f4e5e2;margin-bottom:19px}
+.channel-post-info .post-link{font-size:12px;margin:0}
+.channel-post-info .post-metric{font-size:10px;white-space:nowrap;margin:0}
+.social .profile-cta{font-size:13px;min-height:43px}
+@media(max-width:900px){.channel-heading h3{font-size:25px}.social{padding:20px 14px 17px}}
+@media(max-width:740px){.channel-audience{margin-bottom:22px}.channel-heading h3{font-size:30px}.social{padding:24px 19px 20px}}
 </style>
 </head>
 <body>
@@ -99,27 +119,45 @@ footer{background:#f8e0de;text-align:center;color:var(--muted);font-size:11px;pa
     <p class="sns-heading-description">子どもの目がキランッと光るイヤイヤ対応を実演。<br>保育園あるある・育児あるあるも発信しています。</p>
     <div class="socials">
       <article class="social">
-        <h3><span class="social-icon" aria-hidden="true">◎</span>Instagram</h3>
-        <span class="tag">あとで試したい</span>
-        <p class="social-desc">声かけに迷ったら。今日から使えるひと言を、リールで見つけてみてね。</p>
-        <p class="follower-count">94,547 フォロワー</p>
-        <div class="post-embed"><iframe src="https://www.instagram.com/p/Dds-YtaSuWu/embed/" title="Instagram人気投稿：静かに！" loading="lazy" allowfullscreen></iframe></div><a class="post-link" href="https://www.instagram.com/reel/Dds-YtaSuWu/" target="_blank" rel="noopener noreferrer">静かに！を見る ↗</a><p class="post-metric">保存 8,961件</p>
+        <div class="channel-heading">
+          <span class="channel-brand"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="6.8" r="1" fill="currentColor"/></svg></span>
+          <h3>Instagram</h3>
+          <span class="channel-handle">@fujico143cm</span>
+        </div>
+        <p class="channel-audience"><span class="audience-number">94,547</span><span class="audience-label">フォロワー</span></p>
+        <div class="post-embed"><iframe src="https://www.instagram.com/p/Dds-YtaSuWu/embed/" title="Instagram人気投稿：静かに！" loading="lazy" allowfullscreen></iframe></div>
+        <div class="channel-story">
+          <p class="social-desc">声かけに迷ったら。今日から使えるひと言を、リールで見つけてみてね。</p>
+          <div class="channel-post-info"><a class="post-link" href="https://www.instagram.com/reel/Dds-YtaSuWu/" target="_blank" rel="noopener noreferrer">静かに！を見る ↗</a><p class="post-metric">保存 8,961件</p></div>
+        </div>
         <a class="profile-cta" aria-label="Instagramでリールをもっと見る" href="https://www.instagram.com/fujico143cm/" target="_blank" rel="noopener noreferrer">リールをもっと見る <span aria-hidden="true">↗</span></a>
       </article>
       <article class="social">
-        <h3><span class="social-icon" aria-hidden="true">♪</span>TikTok</h3>
-        <span class="tag">すきま時間に</span>
-        <p class="social-desc">思わず「うちも！」と笑ってしまう、子育てあるあるをのぞいてみてね。</p>
-        <p class="follower-count">27,722 フォロワー</p>
-        <div class="post-embed"><iframe src="https://www.tiktok.com/player/v1/7689380636431305991" title="TikTok人気投稿：静かに！" loading="lazy" allow="fullscreen" allowfullscreen></iframe></div><a class="post-link" href="https://www.tiktok.com/@fujico143cm/video/7689380636431305991" target="_blank" rel="noopener noreferrer">静かに！を見る ↗</a><p class="post-metric">保存 1,724件</p>
+        <div class="channel-heading">
+          <span class="channel-brand"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 3h3a5 5 0 0 0 4 4.2v3a8.2 8.2 0 0 1-4-1.4v7a5.5 5.5 0 1 1-5.5-5.5v3a2.5 2.5 0 1 0 2.5 2.5V3Z"/></svg></span>
+          <h3>TikTok</h3>
+          <span class="channel-handle">@fujico143cm</span>
+        </div>
+        <p class="channel-audience"><span class="audience-number">27,722</span><span class="audience-label">フォロワー</span></p>
+        <div class="post-embed"><iframe src="https://www.tiktok.com/player/v1/7689380636431305991" title="TikTok人気投稿：静かに！" loading="lazy" allow="fullscreen" allowfullscreen></iframe></div>
+        <div class="channel-story">
+          <p class="social-desc">思わず「うちも！」と笑ってしまう、子育てあるあるをのぞいてみてね。</p>
+          <div class="channel-post-info"><a class="post-link" href="https://www.tiktok.com/@fujico143cm/video/7689380636431305991" target="_blank" rel="noopener noreferrer">静かに！を見る ↗</a><p class="post-metric">保存 1,724件</p></div>
+        </div>
         <a class="profile-cta" aria-label="TikTokであるあるをもっと見る" href="https://www.tiktok.com/@fujico143cm" target="_blank" rel="noopener noreferrer">あるあるをもっと見る <span aria-hidden="true">↗</span></a>
       </article>
       <article class="social">
-        <h3><span class="social-icon" aria-hidden="true">▷</span>YouTube</h3>
-        <span class="tag">親子で楽しむ</span>
-        <p class="social-desc">イヤイヤ期の声かけや、おうちで楽しめる手遊びを動画で。</p>
-        <p class="follower-count">67,487 チャンネル登録者</p>
-        <div class="post-embed"><iframe src="https://www.youtube-nocookie.com/embed/xfI40SScueg" title="YouTube人気ショート動画" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><a class="post-link" href="https://www.youtube.com/shorts/xfI40SScueg" target="_blank" rel="noopener noreferrer">人気のショート動画を見る ↗</a><p class="post-metric">高評価 2,048件</p>
+        <div class="channel-heading">
+          <span class="channel-brand"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4" fill="currentColor"/><path d="m10 9 6 3-6 3Z" fill="var(--white)"/></svg></span>
+          <h3>YouTube</h3>
+          <span class="channel-handle">@fujico143cm</span>
+        </div>
+        <p class="channel-audience"><span class="audience-number">67,487</span><span class="audience-label">チャンネル登録者</span></p>
+        <div class="post-embed"><iframe src="https://www.youtube-nocookie.com/embed/xfI40SScueg" title="YouTube人気ショート動画" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+        <div class="channel-story">
+          <p class="social-desc">イヤイヤ期の声かけや、おうちで楽しめる手遊びを動画で。</p>
+          <div class="channel-post-info"><a class="post-link" href="https://www.youtube.com/shorts/xfI40SScueg" target="_blank" rel="noopener noreferrer">人気のショート動画を見る ↗</a><p class="post-metric">高評価 2,048件</p></div>
+        </div>
         <a class="profile-cta" aria-label="YouTubeでチャンネルをのぞく" href="https://www.youtube.com/@fujico143cm" target="_blank" rel="noopener noreferrer">チャンネルをのぞく <span aria-hidden="true">↗</span></a>
       </article>
     </div>
