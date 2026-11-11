@@ -75,6 +75,15 @@ footer{background:#f8e0de;text-align:center;color:var(--muted);font-size:11px;pa
 @media(max-width:900px){.socials{gap:11px}.social{padding:13px}.social h3{font-size:18px}}
 @media(max-width:740px){header,.section{width:calc(100% - 36px)}header{padding:12px 0;gap:8px}.logo{font-size:21px}.logo small{font-size:8px}nav{font-size:11px;gap:4px 10px}nav a:last-child{padding:4px 8px}.book,.profile-grid{grid-template-columns:1fr;gap:29px}.book{max-width:460px}.cover{width:min(52%,220px)}.socials{grid-template-columns:1fr;max-width:440px;margin-inline:auto}.social{padding:17px}.social-desc{min-height:0}.post-embed{height:470px}.works-grid{grid-template-columns:1fr}.work-card,.work-card:nth-child(n+4){grid-column:auto}.work-cta{align-items:flex-start;flex-direction:column}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.sns-heading{display:flex;flex-direction:column;align-items:center;margin:0 auto 22px}
+.sns-heading-caption{color:var(--rose);font-size:10px;font-weight:700;letter-spacing:.24em;line-height:1.5}
+.sns-heading-title{display:flex;align-items:center;justify-content:center;gap:23px;margin:12px 0 13px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(42px,6vw,62px);font-weight:400;line-height:1.05;letter-spacing:.14em;padding-left:.14em;color:var(--ink)}
+.sns-heading-star{font-family:Georgia,serif;font-size:23px;color:#c77586;letter-spacing:0;font-weight:400}
+.sns-heading-star:last-child{font-size:16px;align-self:flex-start;margin-top:6px}
+.sns-heading-rule{width:72px;height:2px;background:linear-gradient(90deg,transparent,#d98f9d 30%,#d98f9d 70%,transparent)}
+.sns-heading-description{font-size:14px;line-height:2;color:var(--muted);margin-bottom:0}
+@media(max-width:740px){.sns-heading-description{font-size:13px}.sns-heading-title{gap:19px}}
 </style>
 </head>
 <body>
@@ -82,9 +91,12 @@ footer{background:#f8e0de;text-align:center;color:var(--muted);font-size:11px;pa
 <main>
 <section class="top-banner" aria-label="ふじこ公式サイト"><h1 class="sr-only">「大変」なイヤイヤを、一緒に乗り越えよう</h1><img src="official-top.png" alt="ふじこ。「大変」なイヤイヤを、一緒に乗り越えよう。優しく言ってもダメ。共感してもダメ。じゃあ、どうしたらいいの…？ そんな時のために、声かけや関わり方の引き出しを発信しています。完璧を目指すためではなく、少し肩の力を抜いて、親子で笑える瞬間を大切にするために…！" fetchpriority="high" width="1670" height="942"></section><div class="bookwrap"><section class="section book" id="book"><div class="cover real-cover"><img src="book-cover.jpg" alt="『イヤイヤ期のトリセツ 元保育士のグズらない声かけ145』書影。ふじこせんせい著、講談社" loading="lazy"></div><div><div class="label">BOOK</div><p class="reprint">4刷重版</p><h2>毎日の「どうしよう」に、<br>そっと寄り添う一冊。</h2><p>『イヤイヤ期のトリセツ』<br>子育てのそばに置いておきたい本を、あなたへ。</p><div class="buttons"><a href="https://www.amazon.co.jp/dp/4065374863" target="_blank" rel="noopener noreferrer">Amazonで見る ↗</a><a href="https://books.rakuten.co.jp/rb/18003925/" target="_blank" rel="noopener noreferrer">楽天ブックスで見る ↗</a></div></div></section></div><div class="socialarea">
   <section class="section center" id="social">
-    <div class="label">FOLLOW ME</div>
-    <h2>今日は、どこで会いましょう？</h2>
-    <p>保存して試したい声かけも、ふっと笑える育児あるあるも。</p>
+    <div class="sns-heading">
+      <span class="sns-heading-caption" aria-hidden="true">FUJICO'S SOCIAL CHANNELS</span>
+      <h2 class="sns-heading-title"><span aria-hidden="true" class="sns-heading-star">✧</span>SNS<span aria-hidden="true" class="sns-heading-star">✧</span></h2>
+      <span class="sns-heading-rule" aria-hidden="true"></span>
+    </div>
+    <p class="sns-heading-description">子どもの目がキランッと光るイヤイヤ対応を実演。<br>保育園あるある・育児あるあるも発信しています。</p>
     <div class="socials">
       <article class="social">
         <h3><span class="social-icon" aria-hidden="true">◎</span>Instagram</h3>
